@@ -22,6 +22,20 @@ echo -----------------------------------------------------------
 source
 
 echo -----------------------------------------------------------
+echo --------------------------Chrome----------------------------
+echo -----------------------------------------------------------
+sudo apt install wget
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+rm -rf ./google-chrome-stable_current_amd64.deb
+
+echo -----------------------------------------------------------
+echo --------------------------VS Code----------------------------
+echo -----------------------------------------------------------
+sudo snap install --classic code
+code --version
+
+echo -----------------------------------------------------------
 echo --------------------------Slack----------------------------
 echo -----------------------------------------------------------
 sudo snap install slack
